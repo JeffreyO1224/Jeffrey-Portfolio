@@ -1,0 +1,23 @@
+body{
+    color: white;
+    margin: 0px;
+    font-family: 'Aleo', serif;
+}
+
+.hero{
+    background-color: #393939;
+    width: cover;
+    height: 500px;
+
+    text-align: center;
+    font-size: 50px;
+}
+
+.headline{
+    color: #ffc31f;
+    font-size: 40px;
+}
+
+.yaypi{
+    height: 100px;
+}
