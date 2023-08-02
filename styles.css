@@ -1,46 +1,53 @@
 body{
     color: white;
+    background-color: #ffFFFF;
     margin: 0px;
     font-family: 'Aleo', serif;
 }
 
 .hero{
-    display:flex;
+    display: flex;
     background-color: #393939;
     width: cover;
     height: 931px;
-    margin: inherit;
-
     text-align: center;
     font-size: 50px;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 
-.img{
-    display:inherit;
+#jeff-img{
     height: 350px;
-    margin: 250px 100px 250px 400px ;
-    border:5px solid #ffc31f;
-    border-radius: 300px;
+    border: 5px solid #ffc31f;
+    border-radius: 350px;
 }
 
-.name{
-    margin-top: 320px;
-    margin-bottom: 0px;
+#nameline{
+    margin-left: 100px;
+}
 
+#name{
     text-align: center;
+    margin-bottom:0px;
+    margin-left: 60px;
 }
 
-.headline{
-    display: inherit;
+#headline{
     color: #ffc31f;
     font-size: 40px;
     margin-top: 0px;
-    margin-left: 60px;
+    margin-left: 110px;
     border-bottom: 4px solid #ffc31f;
     border-radius: 5px;
     width: 550px;
-    
+}
+
+.title{
+    color: #7be0ad;
+    text-shadow: -5px 5px 0px #393939;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 500px;
 }
 
