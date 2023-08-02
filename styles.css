@@ -5,19 +5,42 @@ body{
 }
 
 .hero{
+    display:flex;
     background-color: #393939;
     width: cover;
-    height: 500px;
+    height: 931px;
+    margin: inherit;
 
     text-align: center;
     font-size: 50px;
+    
+}
+
+
+.img{
+    display:inherit;
+    height: 300px;
+    margin: 250px 100px 0px 500px ;
+    border:5px solid #ffc31f;
+    border-radius: 300px;
+}
+
+.name{
+    margin-top: 300px;
+    margin-bottom: 0px;
+
+    text-align: center;
 }
 
 .headline{
+    display: inherit;
     color: #ffc31f;
     font-size: 40px;
+    margin-top: 0px;
+    margin-left: 60px;
+    border-bottom: 4px solid #ffc31f;
+    border-radius: 5px;
+    width: 550px;
+    
 }
 
-.yaypi{
-    height: 100px;
-}
