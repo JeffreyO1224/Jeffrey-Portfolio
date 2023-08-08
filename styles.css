@@ -10,16 +10,12 @@
 
 body{
     background-color: #393939;
-    /*background-image: url("images/ethereal.png");
-    background-attachment: fixed;
-    backdrop-filter: blur(6px);*/
     color: black;
     margin: 0px;
     font-family: 'Aleo', serif;
 }
 
 .hero{
-    /* margin: px; */
     padding: 40px;
     display: flex;
     background-color: #393939; 
@@ -34,9 +30,6 @@ body{
 
 #jeff-img{
     height: 350px;
-    margin: auto auto;
-    text-shadow: 0px 0px 10px white;
-    backdrop-filter: blur(10px);
     border-radius: 50%;
 }
 
@@ -62,12 +55,13 @@ body{
 .underline{
     margin: 0;
     border: 4px solid #7be0ad;
+    border-radius: 5px;
+
 }
 
 #headline-underline{
     width: 560px;
     margin-left: 100px;
-    border-radius: 5px;
 }
 
 
@@ -80,17 +74,22 @@ body{
 }
 
 #introduction:hover #intro-img{
-    filter:blur(0px);
+    filter: blur(6px) brightness(0.7);
+}
+
+#introduction:hover #intro-box{
+    box-shadow:0px 0px 20px white;
 }
 
 #intro-img{
-    filter: blur(6px);
+    transition: all 100ms ease-in; 
     object-fit: none;
     width: 100%;
     height: 700px;
 }
 
 #intro-box{
+    transition: all 100ms ease-in; 
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -100,11 +99,9 @@ body{
     position: absolute;
     top: 50%;
     left: 83%;
-     transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
     
 }
-
-
 
 .title{
     margin: 0px;
@@ -114,10 +111,92 @@ body{
     font-size: 50px;
 }
 
-
-#bio{
+p{
     color: white;
     text-align: start;
     font-size: 20px;
 }
+
+#projects{
+    display: flex;
+    border: 2px solid #7be0ad;
+    width: 100%;
+}
+
+#projects-img{
+    width: 100%;
+    height: 700px;
+    object-fit: none;
+    filter: blur(3px);
+}
+
+#projects-box{
+    /* margin: 0px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 700px;
+    /* border: 5px solid black; */
+    position: absolute;
+}
+
+.indiv-project{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 20px;
+    border: 2px solid rgb(123, 224, 173);
+    border-radius: 5px;
+    background-color: rgba(123, 224, 173, 0.3);
+    height: 600px;
+    width: 400px;
+}
+
+.indiv-project:hover{
+    transition: 100ms linear; 
+    box-shadow:0px 0px 20px rgb(123, 224, 173);
+    
+}
+
+.project-title{
+    text-shadow: -3px 3px 0px #393939;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#flappy-bird:hover #flappy-bird-still{
+    opacity: 0;
+}
+
+#flappy-underline{
+    width: 270px;
+    margin: 0px auto 5px auto;
+}
+
+#flappy-img{
+    position: relative;
+    height: 370px;
+}
+
+#flappy-bird-move{
+    height: 370px;
+}
+
+#flappy-bird-still{
+    position: absolute;
+    height: 370px;
+    margin-block: 10px;
+    top: -10px;
+    left: 0px;
+    transition: opacity 100ms linear; 
+}
+
+
+
 
